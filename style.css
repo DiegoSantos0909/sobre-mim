@@ -1,0 +1,197 @@
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#edf6f9;
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+    }
+
+    /* TOPO */
+
+    header{
+        background:#006d77;
+        text-align:center;
+        padding:30px;
+        position:relative;
+    }
+
+    h1{
+        color:white;
+        font-size:3rem;
+    }
+
+    /* CARDS nao esquecer */
+
+    .card-topo{
+        position:absolute;
+        left:20px;
+        top:20px;
+
+        background:#ffb703;
+        color:#000;
+
+        text-decoration:none;
+
+        padding:12px 25px;
+        border-radius:12px;
+
+        font-weight:bold;
+
+        transition:0.3s;
+    }
+
+    .card-topo:hover{
+        background:#fb8500;
+        transform:scale(1.05);
+    }
+
+    /* icone de musica */
+
+    .musica{
+        position:absolute;
+        right:20px;
+        top:20px;
+
+        color:white;
+        font-size:30px;
+    }
+
+    /* CONTEUDO */
+
+    main{
+        flex:1;
+        padding:30px;
+    }
+
+    /* IMAGEM PRINCIPAL FOTO */
+
+    .imagem-principal{
+        display:flex;
+        justify-content:center;
+        margin-bottom:30px;
+    }
+
+    .imagem-principal img{
+        width:750px;
+        max-width:100%;
+
+        height:400px;
+
+        object-fit:cover;
+        
+        object-position: center top;
+        
+        border-radius:15px;
+
+        box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* TEXTO H1,P */
+
+    .texto{
+        max-width:900px;
+        margin:auto;
+    }
+
+    .texto h2{
+        margin-bottom:15px;
+        color:#023047;
+    }
+
+    .texto p{
+        margin-bottom:15px;
+        line-height:1.8;
+        font-size:18px;
+    }
+
+    /* HOBBIES */
+
+    .cards-hobbies{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+    }
+
+.card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        transition:0.3s;
+        cursor:pointer;
+}
+
+.card img:hover{
+    transform:scale(1.05);
+}
+    .card{
+             width:350px;
+
+            background:white;
+
+            border-radius:12px;
+
+            overflow:hidden;
+
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+.card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+}
+
+.card h2{
+        padding:15px;
+        color:#023047;
+}
+
+.card p{
+        padding:0 15px 20px;
+        line-height:1.7;
+}
+
+/* RODAPÉ  */
+
+footer{
+        background:#023047;
+        color:white;
+        text-align:center;
+        padding:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .card-topo{
+        position:static;
+        display:inline-block;
+        margin-bottom:15px;
+    }
+
+    .musica{
+        position:static;
+        display:block;
+        margin-top:15px;
+    }
+
+    .imagem-principal img{
+        height:250px;
+    }
+
+    .card{
+        width:100%;
+    }
+}
